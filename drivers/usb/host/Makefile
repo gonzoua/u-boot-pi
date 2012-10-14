@@ -53,6 +53,7 @@ COBJS-$(CONFIG_USB_EHCI_PCI) += ehci-pci.o
 COBJS-$(CONFIG_USB_EHCI_S5P) += ehci-s5p.o
 COBJS-$(CONFIG_USB_EHCI_TEGRA) += ehci-tegra.o
 COBJS-$(CONFIG_USB_EHCI_VCT) += ehci-vct.o
+COBJS-$(CONFIG_USB_DWC_OTG) += dwc_otg.o dwc_otg-hcd.o
 
 COBJS	:= $(COBJS-y)
 SRCS	:= $(COBJS:.o=.c)
