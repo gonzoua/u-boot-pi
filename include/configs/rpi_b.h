@@ -19,6 +19,10 @@
 
 #include <asm/sizes.h>
 
+#define CONFIG_CMD_ELF
+#define CONFIG_API
+#define CONFIG_SYS_MMC_MAX_DEVICE 1
+
 /* Architecture, CPU, etc.*/
 #define CONFIG_ARM1176
 #define CONFIG_BCM2835
