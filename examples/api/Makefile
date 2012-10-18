@@ -69,7 +69,7 @@ all:	$(obj).depend $(OUTPUT)
 #########################################################################
 
 $(OUTPUT):	$(OBJS)
-		$(LD) -Ttext $(LOAD_ADDR) -o $@ $^ $(PLATFORM_LIBS)
+		$(LD) -static -Ttext $(LOAD_ADDR) -o $@ $^ $(PLATFORM_LIBS)
 		$(OBJCOPY) -O binary $@ $(OUTPUT).bin 2>/dev/null
 
 # Rule to build generic library C files
