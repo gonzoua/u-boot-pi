@@ -29,6 +29,7 @@ ifdef CONFIG_SPL_BUILD
 COBJS-$(CONFIG_SPL_MMC_SUPPORT) += spl_mmc.o
 endif
 
+COBJS-$(CONFIG_BCM2835_SDHCI) += bcm2835_sdhci.o
 COBJS-$(CONFIG_BFIN_SDH) += bfin_sdh.o
 COBJS-$(CONFIG_DAVINCI_MMC) += davinci_mmc.o
 COBJS-$(CONFIG_FSL_ESDHC) += fsl_esdhc.o

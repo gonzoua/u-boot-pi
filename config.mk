@@ -153,6 +153,8 @@ RANLIB	= $(CROSS_COMPILE)RANLIB
 DTC	= dtc
 CHECK	= sparse
 
+SED	?= sed
+
 #########################################################################
 
 # Load generated board configuration
